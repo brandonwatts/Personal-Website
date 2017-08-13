@@ -1,3 +1,6 @@
+import 'jquery';
+import 'tether';
+import 'bootstrap/dist/js/bootstrap';
 import { render } from "react-dom";
 import React from "react";
 import App from "./Components/App.jsx";

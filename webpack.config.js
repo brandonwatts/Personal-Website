@@ -1,3 +1,5 @@
+var webpack = require('webpack');
+
 module.exports = {
   entry: "./index.jsx",
   output: {
@@ -13,9 +15,13 @@ module.exports = {
         loaders: ["babel-loader"]
       }, {
         test: /\.scss$/,
-        loaders: [ 'style-loader', 'css-loader?sourceMap', 'sass-loader?sourceMap' ]
+        loaders: ['style-loader', 'css-loader?sourceMap', 'sass-loader?sourceMap']
       }
     ]
   },
+  plugins: [
+    new webpack.ProvidePlugin({jQuery: 'jquery', $: 'jquery', jquery: 'jquery'}),
+    new webpack.ProvidePlugin({tether: 'tether', Tether: 'tether'})
+  ],
   devtool: '#source-map'
 }
