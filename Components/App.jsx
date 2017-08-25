@@ -1,4 +1,9 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
+import NavBar from './NavBar.jsx';
+import LeadIn from './LeadIn.jsx';
+import InfoSection from './InfoSection.jsx';
+import PortfolioLink from './PortfolioLink.jsx';
+import AppFooter from './AppFooter.jsx'
 
 export default class App extends Component {
   constructor(props) {
@@ -6,11 +11,13 @@ export default class App extends Component {
   }
 
   render() {
-
     return (
-      <header>
-        <div>DEEZ NUTZ sssis doing its ddthing with React hdhdhsssksmdand ES2015. Whatfff?</div>
-      </header>
+    <div >
+      <LeadIn />
+      <InfoSection />
+      <PortfolioLink />
+      <AppFooter />
+    </div>
     );
   }
 }
