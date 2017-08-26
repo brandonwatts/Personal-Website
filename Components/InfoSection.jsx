@@ -26,7 +26,7 @@ export default class InfoSection extends Component {
         </div>
         <div className='row justify-content-center'>
           <button className='btn mt-4 text-center' style={{backgroundColor:"#76313F"}}>
-            <p className='white-text' style={{margin:"0 35px 0 35px"}}>Click me</p>
+            <p className='white-text' style={{margin:"0 35px 0 35px"}}>Read More</p>
           </button>
         </div>
       </div>

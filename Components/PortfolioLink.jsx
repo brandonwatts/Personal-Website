@@ -23,7 +23,7 @@ export default class PortfolioLink extends Component {
         </div>
         <div className='row justify-content-center'>
           <button className='btn btn-primary mt-4'>
-            <p className='white-text' style={{margin:"0 35px 0 35px"}}>Click me</p>
+            <p className='white-text' style={{margin:"0 35px 0 35px"}}>Read More</p>
           </button>
         </div>
         <div className='row'>
